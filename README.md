@@ -10,6 +10,20 @@ This project was developed as part of the **WEXA AI Graph Database Application A
 
 ---
 
+# 🔗 Why a Graph Database?
+
+Movie recommendation systems are based on relationships between users, movies, genres, and viewing preferences.
+
+In a traditional relational database, finding similar users and recommending movies requires multiple JOIN operations across user, movie, rating, and genre tables. As the number of users and movies grows, these queries become complex and difficult to maintain.
+
+A graph database is a natural fit because it stores entities as nodes and relationships as connections. This allows the application to efficiently traverse relationships such as:
+
+- Users who watched similar movies.
+- Movies belonging to the same genres.
+- Recommendations based on connected users.
+
+CognoDB helps perform relationship-based queries using Cypher, making recommendation generation faster and simpler compared to complex relational queries.
+
 # 🎯 Objectives
 
 The main objectives of this project are:
@@ -394,6 +408,8 @@ This project highlights the advantages of graph databases for relationship-heavy
 👩‍💻 Author
 
 Lakshmi Sravani Gorantla
+
+Render Deployment - Demo Url:  https://wexa-movie-recommendation-system.onrender.com
 
 Project Repository: https://github.com/LakshmiSravaniG/Wexa-Movie-Recommendation-System
 
