@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Recommended Movies</h2>
+
+{% if recommendations %}
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Movie</th>
+
+<th>Genre</th>
+
+<th>Year</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for movie in recommendations %}
+
+<tr>
+
+<td>{{ movie.movieId }}</td>
+
+<td>{{ movie.title }}</td>
+
+<td>{{ movie.genre }}</td>
+
+<td>{{ movie.year }}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+{% else %}
+
+<div class="alert alert-warning">
+
+No recommendations found.
+
+</div>
+
+{% endif %}
+
+{% endblock %}
